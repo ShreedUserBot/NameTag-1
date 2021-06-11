@@ -1,0 +1,46 @@
+{
+    "name": "Məcburi tağ",
+    "description": "Məcburi tağ yazma botu!",
+    "keywords": [
+        "tag",
+        "verify",
+        "telegram",
+        "bots"
+    ],
+    "website": "https://github.com/Texnocom/Nametag",
+    "repository": "https://github.com/Texnocom/Nametag",
+    "success_url": "https://github.com/Texnocom/Nametag",
+    "env": {
+        "API_ID": {
+            "description": "Bunu burdan alın my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Bunu burdan alın my.telegram.org",
+            "value": ""
+        },
+        "TOKEN": {
+            "description": "Bunu burdan alın @BotFather",
+            "value": ""
+        },
+        "TAG": {
+            "description": "Məcburi tağ",
+            "value": ""
+        },
+        "OWNER_ID": {
+            "description": "Bot sahibinin ID",
+            "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
