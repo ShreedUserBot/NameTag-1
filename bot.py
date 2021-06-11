@@ -31,9 +31,13 @@ async def is_admin(message):
       return True
     return False
 
-@tagcheck.on_message(filters.command("start") & filters.user(OWNER_ID))
+@tagcheck.on_message(filters.command("start"))
 async def start(_, message):
-   await message.reply("/start")
+   await message.reply("Federasiyanızın və ya grupunuzun TAĞını hərkəs adına yazsın istəyirsinizsə! Bu botdan sifariş üçün bot sahibinə yazın",
+         reply_markup=InlineKeyboardMarkup([
+            [InlineKeyboardButton("Admin", url="t.me/samil")]
+           ]
+         ))
 
 @tagcheck.on_message(filters.group)
 async def tag_check(_, message):
