@@ -56,6 +56,7 @@ Zəhmət olmasa Tağımızı adınıza yazın və
 daha sonra Səsimi Aç düyməsi ilə səsinizi açın
 
 **Tağ:** `{TAG}`
+**Məsələn:** `Şamilᵗʳᵘᵉ
 """
        await message.reply(
         text,
@@ -83,7 +84,7 @@ async def unmute(client, cb):
     if TAG in cb.from_user.first_name:
       await tagcheck.unban_chat_member(cb.message.chat.id, user)
       await cb.answer("Səsiniz uğurla açıldı!")
-      await delete.message()
+      await message.delete()
       return
     await cb.answer("Tağı yazmadan səsi aça bilmərsən! 😎", show_alert=True)
 
