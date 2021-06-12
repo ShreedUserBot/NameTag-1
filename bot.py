@@ -84,7 +84,7 @@ async def unmute(client, cb):
     if TAG in cb.from_user.first_name:
       await tagcheck.unban_chat_member(cb.message.chat.id, user)
       await cb.answer("Səsiniz uğurla açıldı!")
-      await message.delete()
+      cb.message.delete("Təşəkkürlər")
       return
     await cb.answer("Tağı yazmadan səsi aça bilmərsən! 😎", show_alert=True)
 
