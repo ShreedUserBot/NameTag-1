@@ -74,7 +74,7 @@ Tağı yazdınsa **🔊 SƏSMİ AÇ** düyməsinə kliklə
        user_s.update({"user_id": user})
 
 @tagcheck.on_callback_query(filters.regex("unmute"))
-async def unmute(client, cb):
+async def unmute(client, cb, message):
     try:
        user = user_s["user_id"]
     except KeyError:
