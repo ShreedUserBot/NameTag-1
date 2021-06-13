@@ -89,9 +89,8 @@ async def unmute(_, message, client, cb):
 
     if TAG in cb.from_user.first_name:
       await tagcheck.unban_chat_member(cb.message.chat.id, user)
-      await cb.answer("Səsiniz uğurla açıldı!")
+      await cb.answer("Aramıza qatıldığın üçün təşəkkürlər 🥳\nOyunlar qatıl Axşamları Marağlı Oyunlar Gedir 😎 ", show_alert=True)
       await cb.message.delete()
-      await message.reply(f"Aramıza Qatıldığın üçün təşəkkürlər {message.from_user.mention}")
       return
     await cb.answer("Grup tağını yazmadan bu düymədən istifadə edə bilmərsiniz❗️", show_alert=True)
 
