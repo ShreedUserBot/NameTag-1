@@ -36,7 +36,7 @@ async def start(_, message):
    await message.reply(f"Salam {message.from_user.mention}\nGrupumuza qatıl",
          reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("ᴍᴀғɪᴀ sᴛ✩ᴛᴇ", url="t.me/NewMafiaState")],
-            [InlineKeyboardButton("➕ Grupa qat", url="t.me/https://t.me/StateTagBot?startgroup=a")]
+            [InlineKeyboardButton("➕ Grupa qat", url="t.me/StateTagBot?startgroup=a")]
             
            ]
          ))
