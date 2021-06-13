@@ -33,9 +33,9 @@ async def is_admin(message):
 
 @tagcheck.on_message(filters.command("start"))
 async def start(_, message):
-   await message.reply("Federasiyanızın və ya grupunuzun TAĞını hərkəs adına yazsın istəyirsinizsə! Bu botdan sifariş üçün bot sahibinə yazın",
+   await message.reply(f"Salam {message.from_user.mention}\nGrupumuza qatıl",
          reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Admin", url="t.me/samil")]
+            [InlineKeyboardButton("ᴍᴀғɪᴀ sᴛ✩ᴛᴇ", url="t.me/NewMafiaState")]
            ]
          ))
 
@@ -51,17 +51,21 @@ async def tag_check(_, message):
         ChatPermissions(),
        )
        text = f"""
-**Salam {message.from_user.mention}**
-Zəhmət olmasa Tağımızı adınıza yazın və 
-daha sonra Səsimi Aç düyməsi ilə səsinizi açın
+👋 **Salam {message.from_user.mention}**
+ᴍᴀғɪᴀ sᴛ✩ᴛᴇ Grupuna xoş gəldin
 
-**Tağ:** `{TAG}`
-**Məsələn:** `Şamilᵗʳᵘᵉ
+Grupun qaydalarına əsasən aramıza qatılmaq üçün
+Adınızın Qabağına Qrup tağını yazmalısınız.
+
+**Group Tağımız:** `{TAG}`
+**Nümunə:** `Şamil ¦ sᴛ✩ᴛᴇ
+
+**Tağı yazdınsa __🔊 SƏSMİ AÇ__ düyməsinə kliklə**
 """
        await message.reply(
         text,
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Səsimi aç", callback_data="unmute")]
+            [InlineKeyboardButton("🔊 Səsimi aç", callback_data="unmute")]
            ]
          )
        )
