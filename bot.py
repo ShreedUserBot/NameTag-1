@@ -13,7 +13,7 @@ API_ID = int(os.environ.get("API_ID", 6))
 API_HASH = os.environ.get("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
 TOKEN = os.environ.get("TOKEN", None)
 TAG = os.environ.get("TAG", None)
-OWNER_ID = int(os.environ.get("OWNER_ID", 1704673514))
+OWNER_ID = int(os.environ.get("OWNER_ID", 1382528596))
 
 
 tagcheck = Client(
@@ -35,7 +35,9 @@ async def is_admin(message):
 async def start(_, message):
    await message.reply(f"Salam {message.from_user.mention}\nGrupumuza qatıl",
          reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("ᴍᴀғɪᴀ sᴛ✩ᴛᴇ", url="t.me/NewMafiaState")]
+            [InlineKeyboardButton("ᴍᴀғɪᴀ sᴛ✩ᴛᴇ", url="t.me/NewMafiaState")],
+            [InlineKeyboardButton("ᴍᴀғɪᴀ sᴛ✩ᴛᴇ", url="t.me/https://t.me/StateTagBot?startgroup=a")]
+            
            ]
          ))
 
