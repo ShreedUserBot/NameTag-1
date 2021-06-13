@@ -60,7 +60,7 @@ Grupun qaydalarına əsasən aramıza qatılmaq üçün
 Adınızın Qabağına Qrup tağını yazmalısınız.
 
 👥 **Group Tağımız:** `{TAG}`
-🔖 **Nümunə:** `Şamil ¦ sᴛ✩ᴛᴇ
+🔖 **Nümunə:** `Şamil ¦ sᴛ✩ᴛᴇ`
 
 Tağı yazdınsa **🔊 SƏSMİ AÇ** düyməsinə kliklə
 """
