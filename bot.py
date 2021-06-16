@@ -54,13 +54,13 @@ async def tag_check(_, message):
        )
        text = f"""
 👋 **Salam {message.from_user.mention}**
-ᴍᴀғɪᴀ sᴛ✩ᴛᴇ Grupuna xoş gəldin
+ ⁿ⁰⁸ Klanına xoş gəldin
 
-Grupun qaydalarına əsasən aramıza qatılmaq üçün
-Adınızın Qabağına Qrup tağını yazmalısınız.
+Klanın qaydalarına əsasən aramıza qatılmaq üçün
+Adınızın Qabağına Klan tağını yazmalısınız.
 
-👥 **Group Tağımız:** `{TAG}`
-🔖 **Nümunə:** `Şamil ¦ sᴛ✩ᴛᴇ`
+👥 **Klan Tağımız:** `{TAG}`
+🔖 **Nümunə:** `ⁿ⁰⁸ Şamil`
 
 Tağı yazdınsa **🔊 SƏSMİ AÇ** düyməsinə kliklə
 """
@@ -89,10 +89,10 @@ async def unmute(client, cb):
 
     if TAG in cb.from_user.first_name:
       await tagcheck.unban_chat_member(cb.message.chat.id, user)
-      await cb.answer("Aramıza qatıldığın üçün təşəkkürlər 🥳\nOyunlar qatıl Axşamları Marağlı Oyunlar Gedir 😎 ", show_alert=True)
+      await cb.answer("Aramıza qatıldığın üçün təşəkkürlər 🥳\nAramıza Xoş Gəldin❤ ", show_alert=True)
       await cb.message.delete()
       return
-    await cb.answer("Grup tağını yazmadan bu düymədən istifadə edə bilmərsiniz❗️", show_alert=True)
+    await cb.answer("Klan tağını yazmadan bu düymədən istifadə edə bilmərsiniz❗️", show_alert=True)
 
 
 tagcheck.run()
