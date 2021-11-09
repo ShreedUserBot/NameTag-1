@@ -4,3 +4,8 @@ Qrupunuza qatılan istifadəçilər adının qaşısında sizin tağınızı qoy
 
 # Deploy-to-Heroku 
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Texnocom/Nametag)
+
+
+## HAZIRLAYAN
+- <b><a  href='https://github.com/Texnocom'>Şamil Hüseynov</a></b>
+- <a href="https://t.me/Samil"><img src="https://img.shields.io/badge/-Şamil Hüseynov-0290F7?style=flat-square&amp;labelColor=FFFFFF&amp;logo=Telegram&amp;link=https://t.me/samil" alt="Telegram Badge"></a>
