@@ -1,4 +1,4 @@
-# Federasya Tağ Botu
+# Ad Tağ Botu
 Qrupunuza qatılan istifadəçilər adının qaşısında sizin tağınızı qoymayıbsa həmən istifadəçi susdurulacaq.
 İstifadəçi adının qarşısına yazdıqan sonra TAĞı geri qayıdaraq düymə ilə səsini aça bilər
 
