@@ -10,10 +10,15 @@ from pyrogram.types import (
 logging.basicConfig(level=logging.INFO)
 
 API_ID = int(os.environ.get("API_ID", 6))
-API_HASH = os.environ.get("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
+API_HASH = os.environ.get("API_HASH", "dgajqls0ka18kak18841kl")
 TOKEN = os.environ.get("TOKEN", None)
 TAG = os.environ.get("TAG", None)
 OWNER_ID = int(os.environ.get("OWNER_ID", 1382528596))
+GROUP = os.environ.get("GROUP", "Qrupunuzun adını bura yazın")
+ADD_BUTTON = os.environ.get("ADD_BUTTON", "Qrupa əlavə et")
+GROUP_URL = os.environ.get("GROUP_URL", "Qroup Linkini bura yazın)
+BAN_MSG = os.environ.get("BAN_MSG")
+UN_BAN = os.environ.get("UN_BAN", "🔊 Səsimi aç")
 
 
 tagcheck = Client(
@@ -33,10 +38,10 @@ async def is_admin(message):
 
 @tagcheck.on_message(filters.command("start"))
 async def start(_, message):
-   await message.reply(f"Salam {message.from_user.mention}\nGrupumuza qatıl",
+   await message.reply(f"Salam {message.from_user.mention} bu bot {GROUP} üçün hazırlanmışdır\nGrupumuza qatıl",
          reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("ᴍᴀғɪᴀ sᴛ✩ᴛᴇ", url="t.me/NewMafiaState")],
-            [InlineKeyboardButton("➕ Grupa qat", url="t.me/StateTagBot?startgroup=a")]
+            [InlineKeyboardButton(f"{GROUP}", url=f"{GROUP_URL}")],
+            [InlineKeyboardButton(F"{ADD_BUTTON}", url=f"{GROUP_URL}?startgroup=a")]
             
            ]
          ))
@@ -53,21 +58,12 @@ async def tag_check(_, message):
         ChatPermissions(),
        )
        text = f"""
-👋 **Salam {message.from_user.mention}**
- ⁿ⁰⁸ Klanına xoş gəldin
-
-Klanın qaydalarına əsasən aramıza qatılmaq üçün
-Adınızın Qabağına Klan tağını yazmalısınız.
-
-👥 **Klan Tağımız:** `{TAG}`
-🔖 **Nümunə:** `ⁿ⁰⁸ Şamil`
-
-Tağı yazdınsa **🔊 SƏSMİ AÇ** düyməsinə kliklə
+{BAN_MSG}
 """
        await message.reply(
         text,
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("🔊 Səsimi aç", callback_data="unmute")]
+            [InlineKeyboardButton(f"{UN_BAN}", callback_data="unmute")]
            ]
          )
        )
