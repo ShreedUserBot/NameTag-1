@@ -15,15 +15,15 @@
             "description": "Bunu burdan alın my.telegram.org",
             "value": ""
         },
-        "API_HASH": {
+        "DATABASE_URL": {
             "description": "Bunu burdan alın my.telegram.org",
             "value": ""
         },
-        "TOKEN": {
+        "BOT_USERNAME": {
             "description": "Bunu burdan alın @BotFather",
             "value": ""
         },
-        "TAG": {
+        "LOG_CHANNEL": {
             "description": "Məcburi tağ",
             "value": ""
         },
@@ -31,25 +31,17 @@
             "description": "Bot sahibinin ID",
             "value": ""
         },
-        "GROUP": {
+        "GROUP_SUPPORT": {
             "description": "Qrup adını bura yazın ( Link yox sadəcə ad )",
             "value": "AzBots"
         },
-        "ADD_BUTTON": {
+        "GONDERME_TURU": {
             "description": "Qrupa əlavə et düyməsi (Düymə mesajı)",
             "value": "Qrupa əlavə et"
         },
-        "GROUP_URL": {
+        "LANGAUGE": {
             "description": "Qrup linki",
             "value": "t.me/azbots"
-        },
-        "BAN_MSG": {
-            "description": "Tağı qoymayan istifadəçi banlandığı zaman mesaj",
-            "value": "👋 **Salam {message.from_user.mention}**\nⁿ⁰⁸ Qrupua xoş gəldin bizim tağı adına yazdıqdan sonra {UN_BAN} düyməsinə vuraraq səsini aç\n👥 **Tağımız:** `{TAG}`"
-        },
-        "UN_BAN": {
-            "description": "Tağı qoyduğdan sonra banı açmağı üçün düymə",
-            "value": "🔊 Səsimi aç"
         }
     },
     "buildpacks": [
