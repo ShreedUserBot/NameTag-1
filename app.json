@@ -11,9 +11,6 @@
     "repository": "https://github.com/Texnocom/Nametag",
     "success_url": "https://github.com/Texnocom/Nametag",
     "env": {
-        "API_ID": {
-            "description": "Bunu burdan alın my.telegram.org",
-            "value": ""
         },
         "DATABASE_URL": {
             "description": "Bunu burdan alın my.telegram.org",
