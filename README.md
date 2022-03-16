@@ -3,7 +3,7 @@ Qrupunuza qatılan istifadəçilər adının qaşısında sizin tağınızı qoy
 İstifadəçi adının qarşısına yazdıqan sonra TAĞı geri qayıdaraq düymə ilə səsini aça bilər
 
 # Deploy-to-Heroku 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Texnocom/Nametag)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ShreedUserBot/NameTag-1)
 
 
 ## HAZIRLAYAN
